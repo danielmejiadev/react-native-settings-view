@@ -1,0 +1,72 @@
+{
+    "env": {
+        "es6": true,
+        "node": true,
+        "jest": true
+    },
+    "extends": [
+        "plugin:@typescript-eslint/recommended",
+        "airbnb"
+    ],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true,
+            "legacyDecorators": true
+        },
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "@typescript-eslint"
+    ],
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
+    },
+    "rules": {
+        "no-unused-expressions": "off",
+        "react/static-property-placement": 0,
+        "react/jsx-filename-extension": 0,
+        "@typescript-eslint/no-explicit-any": 0,
+        "global-require": 0,
+        "import/no-named-as-default": 0,
+        "import/extensions": 0,
+        "import/no-extraneous-dependencies": [
+            "error",
+            {
+                "devDependencies": true
+            }
+        ],
+        "object-curly-newline": [
+            "error",
+            {
+                "ObjectPattern": {
+                    "multiline": true
+                },
+                "ImportDeclaration": "never",
+                "ExportDeclaration": {
+                    "multiline": true,
+                    "minProperties": 3
+                }
+            }
+        ],
+        "import/no-unresolved": "off",
+        "linebreak-style": 0,
+        "no-param-reassign": [
+            "error",
+            {
+                "ignorePropertyModificationsFor": [
+                    "self"
+                ]
+            }
+        ],
+        "react/jsx-props-no-spreading": "off"
+    }
+}

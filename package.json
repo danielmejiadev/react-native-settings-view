@@ -1,0 +1,50 @@
+{
+  "name": "react-native-settings-view",
+  "version": "0.2.0",
+  "description": "An easy and highly customizable React Native components to create a complete settings view",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest --verbose --config jest.config.json --no-cache -u --coverage",
+    "test:watch": "jest --config=jest.config.json --watch --coverage",
+    "lint": "eslint --ext .jsx,.js,.tsx src --format html --output-file reports/eslint.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:danielmejiadev/react-native-settings-view.git"
+  },
+  "keywords": [
+    "react-native",
+    "settings",
+    "about",
+    "UI",
+    "builder"
+  ],
+  "author": "Daniel Mejia",
+  "homepage": "https://github.com/danielmejiadev/react-native-settings-view#readme",
+  "devDependencies": {
+    "@types/enzyme": "3.10.5",
+    "@types/jest": "24.9.0",
+    "@types/react": "16.9.19",
+    "@types/react-native": "0.61.2",
+    "@types/react-test-renderer": "16.9.2",
+    "@typescript-eslint/eslint-plugin": "2.17.0",
+    "@typescript-eslint/parser": "2.17.0",
+    "babel-jest": "25.1.0",
+    "enzyme": "3.11.0",
+    "enzyme-adapter-react-16": "1.15.2",
+    "eslint": "6.8.0",
+    "eslint-config-airbnb": "18.0.1",
+    "eslint-plugin-import": "2.20.0",
+    "eslint-plugin-jsx-a11y": "6.2.3",
+    "eslint-plugin-react": "7.18.0",
+    "eslint-plugin-react-hooks": "1.7.0",
+    "jest": "25.1.0",
+    "react": "16.12.0",
+    "react-dom": "16.12.0",
+    "react-native": "0.61.5",
+    "typescript": "3.7.5"
+  },
+  "dependencies": {
+    "react-native-elements": "1.2.7"
+  }
+}

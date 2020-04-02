@@ -1,0 +1,38 @@
+{
+	"preset": "react-native",
+	"moduleFileExtensions": [
+		"ts",
+		"tsx",
+		"js",
+		"jsx",
+		"json",
+		"node"
+	],
+	"moduleDirectories": [
+		"node_modules",
+		"src"
+	],
+	"transform": {
+		"^.+\\.[t|j]sx?$": "babel-jest",
+		"^.+\\.js$": "<rootDir>/node_modules/react-native/jest/preprocessor.js"
+	},
+	"setupFiles": [
+		"<rootDir>/jest/setup.js"
+	],
+	"transformIgnorePatterns": [
+		"node_modules/(?!(jest-)?react-native|@react-native-community|react-native-elements|react-native-reanimated)"
+	],
+	"coveragePathIgnorePatterns": [
+		"/node_modules/",
+		"/jest"
+	],
+	"collectCoverageFrom": [
+		"src/**/*.{js,jsx,ts,tsx}",
+		"!src/**/*styles.js"
+  ],
+	"coverageReporters": [
+		"lcov",
+		"html",
+		"text"
+	]
+}

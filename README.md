@@ -3,6 +3,8 @@
 
 An easy and highly customizable React Native components to create a complete settings view
 
+<img width="300" src="images/screen-usage.png" alt="Example of usage"></img>
+
 ## Getting started
 
 - `yarn add react-native-settings-view`
@@ -41,6 +43,24 @@ import { SectionRow, SettingsPage, NavigateRow, BaseRow } from 'react-native-set
         type: 'font-awesome',
       }}
       onPress={() => console.log('contact')}
+    />
+    <CheckRow
+      text="Notifications"
+      checked
+      leftIcon={{
+        name: 'ios-notifications',
+        type: 'ionicon',
+      }}
+      onValueChange={(isChecked) => console.log('checked', isChecked)}
+    />
+    <SwitchRow
+      text="Do not disturb"
+      enabled
+      leftIcon={{
+        name: 'do-not-disturb',
+        type: 'material-community',
+      }}
+      onValueChange={(isEnabled) => console.log('checked', isEnabled)}
     />
     <BaseRow
       text={i18n.t('version')}
